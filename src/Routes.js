@@ -1,15 +1,17 @@
 import React, { Fragment } from "react";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import  EstadoList  from './components/EstadosList';
-import  DateList  from './components/DateList';
-import  CountriesList  from './components/CountriesList';
-import  Form  from './components/Form';
+import EstadoList from './components/EstadosList';
+import DateList from './components/DateList';
+import CountriesList from './components/CountriesList';
+import Form from './components/Form';
+import MyNavBar from "./components/MyNavBar";
 
 const Routes = () => {
 
     return (
         <BrowserRouter>
+            <MyNavBar />
             <Fragment>
                 <Switch>
                     <Route exact path="/" component={EstadoList} />
